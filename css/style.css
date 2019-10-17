@@ -54,10 +54,10 @@ nav{
     justify-content: center;
 }
 .ham-menu-container ul.icons li{
-    width: 50px;
+    width: auto;
     display: inline-block;
     border-width: 80%;
-    padding: 15px 0;
+    padding: 15px 10px;
 }
 
 .active{
@@ -126,6 +126,33 @@ section.first{
     background: url(../image/kids_selfy.png) no-repeat;
     background-position: 50% 10vh;
     background-size: 100%;
+}
+#school-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    color: #46084e;
+    max-width: 400px;
+    height: 300px;
+    border: 1px solid black;
+}
+#school-card img{
+    height: 100px;
+
+}
+#school-card #text-input{
+    width: 450px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: #efefef;
+    outline: none;
+    border-style: none;
+}
+#school-card p{
+    text-align: center;
 }
 @media(max-width:922px){
     header{

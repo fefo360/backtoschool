@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body, html{
+    height: 8000px;
+    max-width: 1440px;
+    background: url(/image/background.jpg) no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #888;
+}
+header{
+    height: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 50px;
+    background-color: #f02f38;
+    padding: 0 40px;
+    z-index: 2;
+}
+.ham-menu-container{
+    position: relative;
+    visibility: hidden;
+    top: -400px;
+    width: inherit;
+    max-height: 250px;
+    padding: 10px 0;
+    background-color: rgb(20, 0, 51);
+    transition: .5s ease-in-out;
+    z-index: 1;
+    display: block;
+
+}
+.ham-menu-container ul {
+    list-style-type: none;
+}
+.ham-menu-container ul.menu-links > li{
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.ham-menu-container ul ul{
+    display: flex;
+    justify-content: center;
+}
+.ham-menu-container ul.icons li{
+    width: 50px;
+    display: inline-block;
+    border-width: 80%;
+    padding: 15px 0;
+}
+
+.active{
+    visibility: visible;
+    top: 0px;
+}
+.ham-menu{
+    height: 100%;
+}
+.ham-menu  div{
+    width: 33px;
+    border-radius: 10px;
+    position: relative;
+    width: 30px;
+    top: 50%;
+    height: 3px;
+    background-color: white;
+}
+.bar::before{
+    content: '';
+    position: absolute;
+    top: -12px;
+    width: 22px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: white;
+}
+.bar::after{
+    content: '';
+    position: absolute;
+    top: 12px;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: white;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li:nth-child(-n+4){
+    padding: 0 25px;
+    color: white;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+}
+nav ul li:nth-child(4){
+    margin-right: 40px;
+}
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: color .2s;
+}
+nav ul li a img{
+    padding: 0 5px;
+}
+nav ul li:hover{
+    color: rgb(172, 172, 172)
+}
+section.first{
+    min-height: 1000px;
+    max-width: 1440px;
+    background: url(../image/kids_selfy.png) no-repeat;
+    background-position: 50% 10vh;
+    background-size: 100%;
+}
+@media(max-width:922px){
+    header{
+        height: 30px;
+        width: 100%;
+        position: fixed;
+        top:0;
+    }
+    nav{
+        padding: 0 15px;
+    }
+    nav ul li:nth-child(-n+4){
+        display: none;
+    }
+    section.first{
+        margin-top: 50px;
+    }
+}

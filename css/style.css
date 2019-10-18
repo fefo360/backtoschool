@@ -14,13 +14,13 @@ body, html{
     box-shadow: 0 0 10px #888;
 }
 header{
-    height: 50px;
+    height: 70px;
 }
 nav{
     display: flex;
     justify-content: space-between;
     position: relative;
-    height: 50px;
+    height: 100%;
     background-color: #f02f38;
     padding: 0 40px;
     z-index: 2;

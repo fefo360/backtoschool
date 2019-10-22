@@ -236,6 +236,36 @@ section.second img{
         margin-top: 50px;
     }
 }
+.img-container{
+    position: relative;
+}
+.img-container img{
+    width: 100%;
+}
+.img-container div.we-who-are-text{
+    position: absolute;
+    color: red; 
+    width: 28%;
+    left: 12%;
+    top: 15%;
+}
+div.we-who-are-text *{
+    margin: 8% 0;
+    color: #51bd1f;
+}
+div.we-who-are-text h1{
+    font-size: 1.8rem;
+}
+div.we-who-are-text button{
+    height: 2rem;
+    width: 6.5rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    outline: none;
+    border-style: none;
+    color: white;
+    background-color: #ff6d00;
+}
 @media(max-width: 768px){
     html{
         font-size: 13px;

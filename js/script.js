@@ -1,5 +1,6 @@
+
 const hamMenuContainer = document.querySelector('.ham-menu-container')
 
-const toggleMenu = () => {
+function toggleMenu(){
     hamMenuContainer.classList.toggle('active')
 }

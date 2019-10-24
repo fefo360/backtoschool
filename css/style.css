@@ -266,6 +266,46 @@ div.we-who-are-text button{
     color: white;
     background-color: #ff6d00;
 }
+section.fourth{
+    margin-top: 100px;
+}
+section.fourth .img-wrapper {
+    position: relative;
+}
+section.fourth .img-wrapper h1{
+    position: absolute;
+    top: 35%;
+    right: 6%;
+    font-size: 8vw;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 110%;
+    color: white;
+}
+section.fourth .img-wrapper img{
+    width: 100%;
+}
+section.fifth {
+    display: flex;
+    /* flex: 1 1 300px; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section.fifth > *{
+    width: 30%;
+    margin: 5%;
+}
+section.fifth .more-info{
+    color: #3752a5;
+    text-align: center;
+}
+section.fifth div img{
+    width: auto;
+}
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
 @media(max-width: 768px){
     html{
         font-size: 13px;

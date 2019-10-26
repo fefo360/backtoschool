@@ -1,0 +1,371 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+}
+html{
+    position: relative;
+    max-height: 8000px;
+    max-width: 1440px;
+    background: url(/image/background.jpg) no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #888;
+}
+.purple{
+    color: #46084e;
+}
+header{
+    height: 70px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+    background-color: #f02f38;
+    padding: 0 40px;
+    z-index: 999999;
+}
+.ham-menu-container{
+    position: relative;
+    visibility: hidden;
+    top: -400px;
+    width: inherit;
+    max-height: 250px;
+    padding: 10px 0;
+    background-color: rgb(20, 0, 51);
+    transition: .5s ease-in-out;
+    z-index: 1;
+    display: block;
+
+}
+.ham-menu-container ul {
+    list-style-type: none;
+}
+.ham-menu-container ul.menu-links > li{
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.ham-menu-container ul ul{
+    display: flex;
+    justify-content: center;
+}
+.ham-menu-container ul.icons li{
+    width: auto;
+    display: inline-block;
+    border-width: 80%;
+    padding: 15px 10px;
+}
+
+.active{
+    visibility: visible;
+    top: 0px;
+}
+.ham-menu{
+    height: 100%;
+}
+.ham-menu  div{
+    width: 33px;
+    border-radius: 10px;
+    position: relative;
+    width: 30px;
+    top: 50%;
+    height: 3px;
+    background-color: white;
+}
+.bar::before{
+    content: '';
+    position: absolute;
+    top: -12px;
+    width: 22px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: white;
+}
+.bar::after{
+    content: '';
+    position: absolute;
+    top: 12px;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: white;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li:nth-child(-n+4){
+    padding: 0 25px;
+    color: white;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+}
+nav ul li:nth-child(4){
+    margin-right: 40px;
+}
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: color .2s;
+}
+nav ul li a img{
+    padding: 0 5px;
+}
+nav ul li:hover{
+    color: rgb(172, 172, 172)
+}
+section.first{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-flow: column;
+    max-width: 1440px;
+    /* border: 1px solid green; */
+}
+.kids-sport{
+    position: relative;
+    /* border: 3px solid blue; */
+    margin: 10% 0;
+    
+}
+.kids-sport h1{
+    color: #ffd600;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 80%;
+}
+.kids-sport h2{
+    color: #ffd600;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.kids-sport-text{
+    position: absolute;
+    left: 12%;
+}
+img.selfie-image{
+    /* margin: 10% 0; */
+    height: auto;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.school-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin-top: 50px;
+    /* border: 1px solid black; */
+    align-self: center;
+}
+.school-card > :nth-child(-n+3) {
+    /* border: 1px solid red; */
+    margin: 5% 0;
+}
+.school-card img{
+    height: auto;
+    width: 30%;
+}
+.school-card form{
+    width: 100%;
+    margin-top: 5%;
+}
+.school-card #text-input{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: #efefef;
+    outline: none;
+    border-style: none;
+}
+.school-card p{
+    text-align: center;
+    width: 90%;
+}
+section.second{
+}
+section.second img{
+    max-width: 100%;
+}
+.second .img-wrapper{
+   position: relative;
+}
+.img-wrapper .ready-text{
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 30%;
+    width: 33%;
+}
+.img-wrapper .ready-text h1{
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    padding: 5% 0;
+}
+.img-container{
+    position: relative;
+}
+.img-container img{
+    width: 100%;
+}
+.img-container div.we-who-are-text{
+    position: absolute;
+    color: red; 
+    width: 28%;
+    left: 12%;
+    top: 15%;
+}
+div.we-who-are-text *{
+    margin: 8% 0;
+    color: #51bd1f;
+}
+div.we-who-are-text h1{
+    font-size: 1.8rem;
+}
+div.we-who-are-text button{
+    height: 2rem;
+    width: 6.5rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    outline: none;
+    border-style: none;
+    color: white;
+    background-color: #ff6d00;
+}
+section.fourth{
+    margin-top: 100px;
+}
+section.fourth .img-wrapper {
+    position: relative;
+}
+section.fourth .img-wrapper h1{
+    position: absolute;
+    top: 35%;
+    right: 6%;
+    font-size: 8vw;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 110%;
+    color: white;
+}
+section.fourth .img-wrapper img{
+    width: 100%;
+}
+section.fifth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+section.fifth > *{
+    width: 30%;
+    margin: 5%;
+}
+section.fifth .more-info{
+    color: #3752a5;
+    text-align: center;
+}
+section.fifth .more-info h2{
+    padding: 3%;
+}
+section.fifth div img{
+    width: auto;
+}
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right {
+    justify-content: center;    
+}
+footer{
+    margin-top: 100px;
+
+}
+footer  div.img-wrapper {
+    position: relative;
+    width: 100%;
+}
+footer img{
+    width: 100%;
+}
+@media(max-width:922px){
+    html{
+        font-size: 18px;
+    }
+    header{
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        top:0;
+    }
+    nav{
+        height: 100%;
+        padding: 0 15px;
+    }
+    nav ul li:nth-child(-n+4){
+        display: none;
+    }
+    section.first{
+        margin-top: 50px;
+    }
+}
+@media(max-width: 768px){
+    html{
+        font-size: 13px;
+    }
+}
+@media(max-width: 576px){
+    html{
+        font-size: 10px;
+    }
+    #school-card{
+        width: 80%;
+    }
+    #school-card form{
+        align-self: center;
+        width: 90%;
+    }
+    section.fifth > *{
+        width: 100%;
+    }
+    section.fifth > :nth-child(1){
+        order: 2;
+    }
+    section.fifth > :nth-child(2){
+        order: 1;
+    }
+    section.fifth > :nth-child(3){
+        order: 3;
+    }
+    section.fifth > :nth-child(4){
+        order: 4;
+    }
+    section.fifth > :nth-child(5){
+        order: 6;
+    }
+    section.fifth > :nth-child(6){
+        order: 5;
+    }
+}
+@media(min-width: 922px){
+    html{
+        font-size: 22px;
+    }
+}
